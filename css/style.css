@@ -413,6 +413,10 @@ img{
     margin-bottom: var(--mb-2-5);
 }
 
+.about_data{
+    margin-right: 20px;
+}
+
 .about_info{
     display: flex;
     justify-content: space-evenly;
@@ -450,7 +454,10 @@ img{
     align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
+    margin-right: 15px;
 }
+
+
 
 .skills_icon,
 .skills_arrow{
@@ -538,6 +545,10 @@ img{
 .skills_close .skills_list{
     height: 0;
     overflow: hidden;
+}
+
+.skills_open{
+    margin-right: 20px;
 }
 
 .skills_open .skills_list{
@@ -959,6 +970,8 @@ img{
     color: #fff;
 }
 
+
+
 /* =============== SCROLL UP ================== */
 .scrollup{
     position: fixed;
@@ -997,8 +1010,67 @@ img{
     background-color: var(--text-color-light);
 }
 
+
+.work_container{
+    display: flex;
+}
+
+.project_header{
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+.card{
+    width: auto !important;
+    margin: 5px;
+}
+
+/* .project_card{
+    width: auto !important;
+} */
+
+.work_container{
+    max-width: 1000px;
+}
+
+.card_container{
+    /* max-width: 1000px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.recent{
+    margin-bottom: 30px;
+}
+.demo_button{
+    display: block;
+    align-self: center;
+    width: 100px;
+}
 /* ========= MEDIA QUERIES ========== */
 /* For small devices */
+
+
+
+@media screen and (max-width: 700px) {
+    .work_container{
+        flex-direction: column !important;
+    }
+    .qualification_container{
+        margin: 0 !important;
+    }
+    .services_container{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .nav{
+        margin: 0 !important;
+    }
+    .container{
+        margin: 0 !important ;
+    }
+}
+
 @media screen and (max-width: 350px){
     .container{
         margin-left: var(--mb-1);
@@ -1059,10 +1131,14 @@ img{
     .testimonial_description{
         text-align: center;
     }
+
+    
 }
 
 /* For medium devices */
 @media screen and (min-width: 568px){
+    
+
     .home_content{
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -1099,6 +1175,8 @@ img{
         margin-left: auto;
         margin-right: auto;
     }
+
+  
 
     body{
         margin: 0;
@@ -1172,6 +1250,7 @@ img{
     }
     .about_description{
         text-align: initial;
+        font-size: 19px;
     }
     .about_info{
         justify-content: space-between;
@@ -1288,3 +1367,4 @@ img{
         grid-template-columns: repeat(2, 1fr );
     }
 }
+
